@@ -1,0 +1,10 @@
+{
+  "name": "@comp-lib-vue/demo",
+  "private":true,
+  "scripts": {
+    "dev": "vite"
+  },
+  "dependencies": {
+    "@comp-lib-vue/ui": "workspace:^"
+  }
+}

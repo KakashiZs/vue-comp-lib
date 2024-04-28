@@ -1,0 +1,7 @@
+{
+  "name": "@comp-lib-vue/docs",
+  "private": true,
+  "scripts": {
+    "dev": "echo 'docs test'"
+  }
+}

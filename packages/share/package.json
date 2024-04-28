@@ -1,0 +1,17 @@
+{
+  "name": "@comp-lib-vue/share",
+  "main": "./dist/complib-shared.umd.js",
+  "module": "./dist/complib-shared.mjs",
+  "exports": {
+    ".": {
+      "require": "./dist/complib-shared.umd.js",
+      "module": "./dist/complib-shared.mjs"
+    }
+  },
+  "scripts": {
+    "build": "vite build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

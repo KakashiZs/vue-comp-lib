@@ -1,0 +1,20 @@
+{
+  "name": "@comp-lib-vue/ui",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.ts",
+  "scripts": {
+    "build": "vite build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@comp-lib-vue/button": "workspace:^",
+    "@comp-lib-vue/share": "workspace:^"
+  },
+  "peerDependencies": {
+    "vue": "^3.4.25"
+  }
+}

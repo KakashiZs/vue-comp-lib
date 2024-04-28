@@ -1,0 +1,31 @@
+{
+  "name": "@comp-lib-vue/button",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/CompLib-Button.umd.js",
+  "module": "./dist/CompLib-Button.mjs",
+  "types": "",
+  "exports": {
+    ".": {
+      "import": "./dist/CompLib-Button.mjs",
+      "require": "./dist/CompLib-Button.umd.js",
+      "types": ""
+    }
+  },
+  "scripts": {
+    "build": "vite build"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "peerDependencies": {
+    "vue": "^3.4.25"
+  },
+  "dependencies": {
+    "@comp-lib-vue/share": "workspace:^"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
