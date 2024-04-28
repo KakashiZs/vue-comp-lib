@@ -4,12 +4,12 @@
   "description": "",
   "main": "./dist/CompLib-Button.umd.js",
   "module": "./dist/CompLib-Button.mjs",
-  "types": "",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "import": "./dist/CompLib-Button.mjs",
       "require": "./dist/CompLib-Button.umd.js",
-      "types": ""
+      "types": "./dist/index.d.ts"
     }
   },
   "scripts": {

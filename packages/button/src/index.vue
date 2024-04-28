@@ -1,15 +1,18 @@
 <template>
-  <button @click="onClick">{{ text }}</button>
+  <button @click="onClick">{{ props.txt }}666</button>
 </template>
 
 <script setup lang="ts">
 import { sayHello } from "@comp-lib-vue/share";
-import { ref } from "vue";
 
-const text = "点击";
+const props = withDefaults(defineProps<{
+  txt: string;
+}>(), {
+  txt: '',
+});
 
 const onClick = () => {
-  sayHello("world");
+  sayHello('p');
 };
 
 </script>

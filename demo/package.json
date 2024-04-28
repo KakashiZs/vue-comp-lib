@@ -5,6 +5,7 @@
     "dev": "vite"
   },
   "dependencies": {
-    "@comp-lib-vue/ui": "workspace:^"
+    "@comp-lib-vue/ui": "workspace:^",
+    "@comp-lib-vue/button": "workspace:^"
   }
 }

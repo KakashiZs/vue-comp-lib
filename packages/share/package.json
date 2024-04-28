@@ -2,10 +2,12 @@
   "name": "@comp-lib-vue/share",
   "main": "./dist/complib-shared.umd.js",
   "module": "./dist/complib-shared.mjs",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "require": "./dist/complib-shared.umd.js",
-      "module": "./dist/complib-shared.mjs"
+      "module": "./dist/complib-shared.mjs",
+      "types": "./dist/index.d.ts"
     }
   },
   "scripts": {

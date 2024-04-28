@@ -1,2 +1,2 @@
-export * from '@comp-lib-vue/button'
-export * from '@comp-lib-vue/share'
+export { Button } from "@comp-lib-vue/button";
+export { sayHello } from "@comp-lib-vue/share";
