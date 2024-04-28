@@ -1,3 +1,3 @@
-import Button from "./index.vue";
+import Button from './index.vue';
 
 export { Button };

@@ -1,7 +1,7 @@
 // demo/vite.config.ts
-import { defineConfig } from "vite";
-import vue from "@vitejs/plugin-vue";
-import { join } from "node:path";
+import { defineConfig } from 'vite';
+import vue from '@vitejs/plugin-vue';
+import { join } from 'node:path';
 
 export default defineConfig({
   plugins: [vue()],
@@ -9,7 +9,7 @@ export default defineConfig({
     alias: [
       {
         find: /^@comp-lib-vue\/(.+)$/,
-        replacement: join(__dirname, "..", "packages", "$1", "src"),
+        replacement: join(__dirname, '..', 'packages', '$1', 'src'),
       },
     ],
   },

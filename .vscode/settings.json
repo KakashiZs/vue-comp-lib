@@ -1,0 +1,33 @@
+// .vscode/settings.json
+{
+  // 已有配置。。。
+
+  // 设置默认格式化工具为 Prettier
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // 默认禁用自动格式化(手动格式化快捷键：Shift + Alt + F)
+  "editor.formatOnSave": false,
+  "editor.formatOnPaste": false,
+
+  // 启用自动代码修复功能，保存时触发 eslint 和 stylelint 的自动修复。
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true
+  },
+
+  // volar 可以处理 vue 文件的格式化
+  "[vue]": {
+    "editor.defaultFormatter": "Vue.volar"
+  },
+
+  // json、yaml 等配置文件保存时自动格式化
+  "[json]": {
+    "editor.formatOnSave": true
+  },
+  "[jsonc]": {
+    "editor.formatOnSave": true
+  },
+  "[yaml]": {
+    "editor.formatOnSave": true
+  }
+}

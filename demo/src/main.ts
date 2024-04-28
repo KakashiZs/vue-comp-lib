@@ -1,5 +1,5 @@
 // demo/src/main.ts
-import { createApp } from 'vue'
-import App from './app.vue'
+import { createApp } from 'vue';
+import App from './app.vue';
 
-createApp(App).mount('#app')
+createApp(App).mount('#app');

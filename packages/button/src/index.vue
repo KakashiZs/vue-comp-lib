@@ -1,9 +1,11 @@
 <template>
-  <button @click="onClick">{{ props.txt }}666</button>
+  <button @click="onClick">
+    {{ props.txt }}666
+  </button>
 </template>
 
 <script setup lang="ts">
-import { sayHello } from "@comp-lib-vue/share";
+import { sayHello } from '@comp-lib-vue/share';
 
 const props = withDefaults(defineProps<{
   txt: string;
@@ -12,7 +14,7 @@ const props = withDefaults(defineProps<{
 });
 
 const onClick = () => {
-  sayHello('p');
+  sayHello(props.txt);
 };
 
 </script>
