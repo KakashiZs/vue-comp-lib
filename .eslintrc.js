@@ -64,8 +64,10 @@ module.exports = defineConfig({
 
     // 换行符不作约束
     'linebreak-style': 'off',
+    'object-curly-newline': 'off',
+    'no-use-before-define': 'off',
+    '@typescript-eslint/no-use-before-define': 'off',
   },
-
   // 文件级别的重写
   overrides: [
     // 对于 vite 和 vitest 的配置文件，不对 console.log 进行错误提示
@@ -75,6 +77,7 @@ module.exports = defineConfig({
         '**/vitest.config.*',
       ],
       rules: {
+        'import/no-relative-packages': 'off',
         'no-console': 'off',
       },
     },

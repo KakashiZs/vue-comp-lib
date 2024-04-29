@@ -3,18 +3,31 @@
   "private": true,
   "version": "1.0.0",
   "description": "",
-  "main": "./src/index.ts",
+  "main": "./dist/comp-lib-vue-ui.umd.js",
   "scripts": {
-    "build": "vite build"
+    "build:package": "vite build --mode package",
+    "build:full": "vite build --mode full",
+    "build:full-min": "vite build --mode full-min",
+    "build": "pnpm run build:package && pnpm run build:full && pnpm run build:full-min"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@comp-lib-vue/button": "workspace:^",
+    "@comp-lib-vue/tag": "workspace:^",
     "@comp-lib-vue/share": "workspace:^"
   },
   "peerDependencies": {
     "vue": "^3.4.25"
+  },
+  "module": "./dist/comp-lib-vue-ui.mjs",
+  "types": "./dist/src/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/comp-lib-vue-ui.umd.js",
+      "import": "./dist/comp-lib-vue-ui.mjs",
+      "types": "./dist/src/index.d.ts"
+    }
   }
 }

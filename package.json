@@ -7,7 +7,8 @@
     "type:node": "tsc -p tsconfig.node.json --noEmit --composite false",
     "type:src": "pnpm run clean:type && vue-tsc -p tsconfig.src.json --composite false --declaration --emitDeclarationOnly",
     "mv-type": "tsx ./scripts/dts-mv.ts",
-    "build:ui": "pnpm run type:src && pnpm --filter ./packages/** run build && pnpm run mv-type",
+    "build:ui-old": "pnpm run type:src && pnpm --filter ./packages/** run build && pnpm run mv-type",
+    "build:ui": "pnpm run type:src && pnpm --filter ./packages/** run build",
     "prepare": "husky install",
     "lint:script": "eslint --ext .js,.jsx,.ts,.tsx,.vue --fix ./",
     "lint:staged": "lint-staged"
@@ -30,6 +31,7 @@
     "lint-staged": "^15.2.2",
     "prettier": "^3.2.5",
     "rimraf": "^5.0.5",
+    "sass": "^1.75.0",
     "tsx": "^4.7.3",
     "typescript": "^5.4.5",
     "vite": "^5.2.10",

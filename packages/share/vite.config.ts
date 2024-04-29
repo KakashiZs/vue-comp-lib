@@ -1,13 +1,4 @@
-import { defineConfig } from 'vite';
+// packages/shared/vite.config.ts
+import { generateConfig } from '../build/build.config';
 
-// https://vitejs.dev/config/
-export default defineConfig({
-  build: {
-    minify: false,
-    lib: {
-      entry: './src/index.ts',
-      name: 'complibshare',
-      fileName: 'complib-shared',
-    },
-  },
-});
+export default generateConfig();

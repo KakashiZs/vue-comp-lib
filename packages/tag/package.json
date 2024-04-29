@@ -1,15 +1,15 @@
 {
-  "name": "@comp-lib-vue/button",
+  "name": "@comp-lib-vue/tag",
   "version": "1.0.0",
   "description": "",
-  "main": "./dist/comp-lib-vue-button.umd.js",
-  "module": "./dist/comp-lib-vue-button.mjs",
-  "types": "./dist/src/index.d.ts",
+  "main": "./dist/CompLib-Tag.umd.js",
+  "module": "./dist/CompLib-Tag.mjs",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "require": "./dist/comp-lib-vue-button.umd.js",
-      "import": "./dist/comp-lib-vue-button.mjs",
-      "types": "./dist/src/index.d.ts"
+      "import": "./dist/CompLib-Tag.mjs",
+      "require": "./dist/CompLib-Tag.umd.js",
+      "types": "./dist/index.d.ts"
     }
   },
   "scripts": {

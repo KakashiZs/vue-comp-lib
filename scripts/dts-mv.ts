@@ -1,4 +1,5 @@
 // scripts/dts-mv.ts
+// 把 /dist 里的 d.ts 移动到子包本身的 dist 里
 import { join } from 'node:path';
 import { readdir, cp } from 'node:fs/promises';
 
